@@ -1,5 +1,5 @@
 {
-  "name": "@bitecheck/math",
+  "name": "@repo/math",
   "version": "0.0.1",
   "exports": {
     ".": "./index.ts"
