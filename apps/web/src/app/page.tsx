@@ -1,7 +1,14 @@
-import React from "react";
+import { api } from "~/trpc/server";
 
-import { add } from "@bitecheck/math";
+import PageClient from "./page.client";
 
-export default function HomePage() {
-  return <div>{add(1, 2)}</div>;
+export default async function HomePage() {
+  const { greeting } = await api.example.hello({ text: "ahmed" });
+
+  return (
+    <div>
+      <p>greeting from server: {greeting}</p>
+      <PageClient />
+    </div>
+  );
 }

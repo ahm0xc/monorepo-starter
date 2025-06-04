@@ -54,13 +54,14 @@
       "name": "web",
       "version": "0.0.1",
       "dependencies": {
-        "@bitecheck/math": "workspace:*",
         "@radix-ui/react-dialog": "^1.1.6",
         "@radix-ui/react-label": "^2.1.2",
         "@radix-ui/react-scroll-area": "^1.2.3",
         "@radix-ui/react-select": "^2.1.6",
         "@radix-ui/react-slot": "^1.1.2",
         "@radix-ui/react-switch": "^1.1.3",
+        "@repo/math": "workspace:*",
+        "@repo/trpc": "workspace:*",
         "@t3-oss/env-nextjs": "^0.10.1",
         "@tanstack/react-query": "^5.50.0",
         "@trpc/client": "^11.0.0-rc.446",
@@ -90,8 +91,19 @@
       },
     },
     "packages/math": {
-      "name": "@bitecheck/math",
+      "name": "@repo/math",
       "version": "0.0.1",
+    },
+    "packages/trpc": {
+      "name": "@repo/trpc",
+      "version": "0.0.1",
+      "dependencies": {
+        "superjson": "^2.2.2",
+        "zod": "^3.22.4",
+      },
+      "devDependencies": {
+        "typescript": "^5.3.3",
+      },
     },
   },
   "packages": {
@@ -284,8 +296,6 @@
     "@babel/traverse--for-generate-function-map": ["@babel/traverse@7.27.4", "", { "dependencies": { "@babel/code-frame": "^7.27.1", "@babel/generator": "^7.27.3", "@babel/parser": "^7.27.4", "@babel/template": "^7.27.2", "@babel/types": "^7.27.3", "debug": "^4.3.1", "globals": "^11.1.0" } }, "sha512-oNcu2QbHqts9BtOWJosOVJapWjBDSxGCpFvikNR5TGDYDQf3JwpIoMzIKrvfoti93cLfPJEG4tH9SPVeyCGgdA=="],
 
     "@babel/types": ["@babel/types@7.27.3", "", { "dependencies": { "@babel/helper-string-parser": "^7.27.1", "@babel/helper-validator-identifier": "^7.27.1" } }, "sha512-Y1GkI4ktrtvmawoSq+4FCVHNryea6uR+qUQy0AGxLSsjCX0nVmkYQMBLHDkXZuo5hGx7eYdnIaslsdBFm7zbUw=="],
-
-    "@bitecheck/math": ["@bitecheck/math@workspace:packages/math"],
 
     "@egjs/hammerjs": ["@egjs/hammerjs@2.0.17", "", { "dependencies": { "@types/hammerjs": "^2.0.36" } }, "sha512-XQsZgjm2EcVUiZQf11UBJQfmZeEmOW8DpI1gsFeln6w0ae0ii4dMQEQ0kjl6DspdWX1aGY1/loyXnP0JS06e/A=="],
 
@@ -538,6 +548,10 @@
     "@react-navigation/native-stack": ["@react-navigation/native-stack@7.3.14", "", { "dependencies": { "@react-navigation/elements": "^2.4.3", "warn-once": "^0.1.1" }, "peerDependencies": { "@react-navigation/native": "^7.1.10", "react": ">= 18.2.0", "react-native": "*", "react-native-safe-area-context": ">= 4.0.0", "react-native-screens": ">= 4.0.0" } }, "sha512-45Sf7ReqSCIySXS5nrKtLGmNlFXm5x+u32YQMwKDONCqVGOBCfo4ryKqeQq1EMJ7Py6IDyOwHMhA+jhNOxnfPw=="],
 
     "@react-navigation/routers": ["@react-navigation/routers@7.4.0", "", { "dependencies": { "nanoid": "^3.3.11" } }, "sha512-th5THnuWKJlmr7GGHiicy979di11ycDWub9iIXbEDvQwmwmsRzppmVbfs2nD8bC/MgyMgqWu/gxfys+HqN+kcw=="],
+
+    "@repo/math": ["@repo/math@workspace:packages/math"],
+
+    "@repo/trpc": ["@repo/trpc@workspace:packages/trpc"],
 
     "@sinclair/typebox": ["@sinclair/typebox@0.27.8", "", {}, "sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA=="],
 

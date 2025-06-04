@@ -1,0 +1,50 @@
+// {
+//   "compilerOptions": {
+//     "declaration": true,
+//     "declarationMap": true,
+//     "esModuleInterop": true,
+//     "incremental": false,
+//     "isolatedModules": true,
+//     "moduleDetection": "force",
+//     "noUncheckedIndexedAccess": true,
+//     "resolveJsonModule": true,
+//     "skipLibCheck": true,
+//     "strict": true,
+//     "target": "ES2022",
+//     "outDir": "dist",
+//     "lib": ["ES2022"],
+//     "module": "NodeNext",
+//     "moduleResolution": "NodeNext"
+//   },
+//   "include": ["src"],
+//   "exclude": ["node_modules", "dist"]
+// }
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    /* AND if you're building for a library in a monorepo: */
+    "composite": true,
+    "declarationMap": true,
+
+    /* If NOT transpiling with TypeScript: */
+    "module": "preserve",
+    "noEmit": true,
+
+    /* If your code runs in the DOM: */
+    "lib": ["es2022", "dom", "dom.iterable"]
+  }
+}

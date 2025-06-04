@@ -6,8 +6,8 @@ import "~/styles/globals.css";
 import { TRPCReactProvider } from "~/trpc/react";
 
 export const metadata: Metadata = {
-  title: "Bitecheck",
-  description: "Bitecheck",
+  title: "Mono Repo starter",
+  description: "Mono Repo starter",
 };
 
 export default function RootLayout({
