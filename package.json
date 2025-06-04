@@ -1,5 +1,5 @@
 {
-  "name": "bitecheck",
+  "name": "repo",
   "version": "0.0.1",
   "type": "module",
   "workspaces": [
@@ -7,6 +7,7 @@
     "apps/*"
   ],
   "scripts": {
+    "dev": "concurrently --names \"web,mobile\" -c \"cyan.bold,magenta.bold\" \"bun run --filter web dev\" \"bun run --filter mobile start\"",
     "typecheck": "bunx --bun tsc",
     "fmt": "prettier --write \"apps/**/*.{ts,tsx,js,jsx,mdx}\" \"packages/**/*.{ts,tsx,js,jsx,mdx}\" --cache",
     "fmt:check": "prettier --check \"apps/**/*.{ts,tsx,js,jsx,mdx}\" \"packages/**/*.{ts,tsx,js,jsx,mdx}\" --cache"
