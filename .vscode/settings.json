@@ -12,5 +12,4 @@
     "source.sortImports": "always"
   },
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["bitecheck"]
 }
