@@ -8,7 +8,8 @@
     "check": "next lint && tsc --noEmit",
     "dev": "next dev --turbopack",
     "preview": "next build && next start",
-    "start": "next start"
+    "start": "next start",
+    "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.6",
